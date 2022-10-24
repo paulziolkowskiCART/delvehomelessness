@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    padding: 1rem 0;
+    background-color: beige;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navbar-logo {
+    align-self: flex-start;
+}
