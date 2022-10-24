@@ -1,0 +1,17 @@
+[class^="Navigation"] {
+width: 100%;
+height: 70px;
+}
+
+.Navigation {
+    background-color: rgb(152, 145, 145);
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: none;
+    position: relative;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: left;
+}
