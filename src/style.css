@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Inter:wght@400;600;700;800;900&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --accent-primary: #28AAE0;
+    --accent-primary-25: #28AAE025;
+    --accent-secondary: #1B1564;
+    --accent-gradient: linear-gradient(#28AAE0, #1A86B2);
+}
+
 *,
 *::before,
 *::after {
@@ -6,14 +16,66 @@
     box-sizing: border-box;
 }
 
-.navbar {
-    display: flex;
-    padding: 1rem 0;
-    background-color: beige;
-    justify-content: flex-end;
-    align-items: flex-end;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter Tight', sans-serif;
 }
 
-.navbar-logo {
-    align-self: flex-start;
+a {
+    text-decoration: none;
+}
+
+.delvehomes {
+    color: var(--accent-secondary);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.delvehomes::after {
+    content: "Homes";
+    color: var(--accent-primary);
+}
+
+.navigation {
+    display: flex;
+    padding: 1rem 10vw;
+    background-color: #f0f0f0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > * {
+    margin-right: 0.25rem;
+}
+
+.navbar > ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 0.75rem;
+}
+
+.navbar a {
+    color: var(--accent-secondary);
+    padding: 0.325em 0.625em;
+    background-color: var(--accent-primary-25);
+    border-radius: 1em;
+    transition: all 400ms ease-out;
+}
+
+.navbar a:hover {
+
 }
