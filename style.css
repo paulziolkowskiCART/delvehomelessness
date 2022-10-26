@@ -55,10 +55,15 @@ h6 {
     font-weight: 800;
 }
 
-.navigation {
+.navbar {
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar-content {
+    max-width: calc(100% - 16rem);
+    margin: 0 auto;
     display: flex;
-    padding: 1rem 10vw;
-    background-color: var(--header-background);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -74,26 +79,45 @@ h6 {
     margin-right: 0.25rem;
 }
 
-.navbar-menu {
+.navbar-menu-list {
     display: flex;
     list-style: none;
 }
 
-.navbar-menu > li {
+.navbar-menu-list > li {
     margin-left: 0.75rem;
 }
 
-.button {
-    color: #000;
+.navbar-button {
+    color: var(--accent-secondary);
     background-color: var(--accent-primary-0);
     padding: 0.3em 0.6em;
-    border-radius: 1em;
+    border-radius: 1.6em;
+    text-decoration: none;
+    transition: background-color 100ms ease, color 100ms ease;
+}
+
+.navbar-button:hover {
+    color: #000;
+    background-color: var(--accent-primary-25);
+}
+
+.navbar-button:active {
+    outline: 0.1em solid var(--accent-secondary);
+}
+
+.button {
+    color: var(--accent-secondary);
+    box-sizing: content-box;
+    background-color: var(--accent-primary-50);
+    padding: 0.5em 0.75em;
+    border-radius: 2em;
     text-decoration: none;
     transition: background-color 100ms ease, color 100ms ease;
 }
 
 .button:hover {
-    color: var(--accent-secondary);
+    color: #000;
     background-color: var(--accent-primary-25);
 }
 
@@ -102,22 +126,37 @@ h6 {
 }
 
 .hero {
-    padding: 10vw;
-    background-color: #fafafa;
+    background: fixed padding-box url('img/hero.jpg') center/cover;
+    padding-top: 10vh;
 }
 
-.hero > * {
-    margin-bottom: 0.2rem;
+.hero-content {
+    max-width: 33%;
+    min-height: 70vh;
+    margin-left: 8rem;
 }
 
 .hero-title {
+    color: #fff;
     font-size: 3rem;
+    margin-bottom: 0.2em;
 }
 
 .hero-subtitle {
+    color: #fff;
     font-size: 1.5rem;
+    margin-bottom: 2em;
 }
 
-.hero-tour-button {
-    font-size: 1.75rem;
+.hero-tour {
+    color: white;
+    background-color: #ffffff00;
+    outline: 0.1em solid white;
+    font-size: 2rem;
+}
+
+.hero-tour:hover {
+    color: #000;
+    background-color: white;
+    outline: 0.1em solid #ffffff00;
 }
