@@ -19,13 +19,20 @@ nav.main-nav {
     margin: 0 auto;
 }
 
+.button:hover {
+    color: rgb(33, 58, 39);
+    outline: 1px solid white;
+    border-radius: 5%;
+    background-color: rgba(125, 140, 152, 0.285);
+    padding: 0.2rem;
+}
+
 body {
     margin: 0;
 }
 
 .main-nav a {
     display: inline-block;
-    padding: 2rem;
     color: white;
     text-decoration: none;
 }
@@ -59,31 +66,44 @@ body {
 }
 
 main {
-    background-color: rgb(61, 64, 66);
     color: white;
     display: flex;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 main section:first-child {
-    width: 100%;;
+    width: 100%;
     text-align: center;
+    display: block;
+    background-color: rgb(61, 64, 66);
+}
+
+main section {
+    width: 100%;
+    display: flex;
+   flex-wrap: wrap;
 }
 
 section hr {
     width: 100px;
 }
 
-Section:nth-child(3) {
+Section:nth-child(2) {
     background-color: lightgray;
-    display: flex;
     padding-left: 5%;
+    color: black;
+}
+
+section:nth-child(3) h3 {
+    width: 100%;
+    color: black;
 }
 
 .card-container {
+    flex-wrap: wrap;
     display: flex;
-    overflow: scroll;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .card1 {
@@ -107,3 +127,46 @@ Section:nth-child(3) {
     border-radius: 32px;
 }
 
+h4 {
+    font-size: 30px;
+    text-align: left
+}
+
+section:nth-child(3) {
+    background-color: rgb(255, 247, 247);
+    color: black;
+}
+
+.Line {
+    margin: 0;
+}
+
+.Line.right {
+    margin-left: auto;
+}
+
+.Line.Left {
+    margin-left: auto;
+}
+
+.Serving {
+    padding: 5%;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+.Serving > .left {
+    margin-right: auto;
+}
+
+.Serving > .right {
+    margin-left: auto;
+    padding-top: 10%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
