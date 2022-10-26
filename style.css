@@ -2,10 +2,14 @@
 
 :root {
     font-family: 'Inter', sans-serif;
-    --accent-primary: #28AAE0;
-    --accent-primary-25: #28AAE025;
-    --accent-secondary: #1B1564;
-    --accent-gradient: linear-gradient(#28AAE0, #1A86B2);
+    --accent-primary: #28aae0;
+    --accent-primary-0: #28aae000;
+    --accent-primary-25: #28aae025;
+    --accent-primary-50: #28aae050;
+    --accent-primary-75: #28aae075;
+    --accent-primary-gradient-stop: #0080b5;
+    --accent-secondary: #1b1564;
+    --header-background: #f0f0f0;
 }
 
 *,
@@ -25,57 +29,95 @@ h6 {
     font-family: 'Inter Tight', sans-serif;
 }
 
-a {
-    text-decoration: none;
+.primary {
+    color: var(--accent-primary);
 }
 
-.delvehomes {
+.secondary {
     color: var(--accent-secondary);
+}
+
+.logomark-home-gradient-stop1 {
+    stop-color: var(--accent-primary);
+}
+
+.logomark-home-gradient-stop2 {
+    stop-color: var(--accent-primary-gradient-stop);
+}
+
+.logomark-d {
+    fill: var(--accent-secondary);
+}
+
+.wordmark {
     font-family: 'Inter Tight', sans-serif;
     font-size: x-large;
     font-weight: 800;
 }
 
-.delvehomes::after {
-    content: "Homes";
-    color: var(--accent-primary);
-}
-
 .navigation {
     display: flex;
     padding: 1rem 10vw;
-    background-color: #f0f0f0;
+    background-color: var(--header-background);
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo > * {
     margin-right: 0.25rem;
 }
 
-.navbar > ul {
+.navbar-menu {
     display: flex;
     list-style: none;
 }
 
-.navbar li {
+.navbar-menu > li {
     margin-left: 0.75rem;
 }
 
-.navbar a {
-    color: var(--accent-secondary);
-    padding: 0.325em 0.625em;
-    background-color: var(--accent-primary-25);
+.button {
+    color: #000;
+    background-color: var(--accent-primary-0);
+    padding: 0.3em 0.6em;
     border-radius: 1em;
-    transition: all 400ms ease-out;
+    text-decoration: none;
+    transition: background-color 100ms ease, color 100ms ease;
 }
 
-.navbar a:hover {
+.button:hover {
+    color: var(--accent-secondary);
+    background-color: var(--accent-primary-25);
+}
 
+.button:active {
+    outline: 0.1em solid var(--accent-secondary);
+}
+
+.hero {
+    padding: 10vw;
+    background-color: #fafafa;
+}
+
+.hero > * {
+    margin-bottom: 0.2rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+.hero-tour-button {
+    font-size: 1.75rem;
 }
