@@ -270,6 +270,10 @@ body {
     width: 100%;
 }
 
+.Schedule >h3 {
+    font-size: 40px;
+}
+
 .Times {
     display: flex;
     flex-wrap: wrap;
@@ -278,7 +282,13 @@ body {
 
 .Times1 {
     background-color: #CCCCCC;
-    
+    margin-left: 6%;
+    width: 20%;
+    border-radius: 5%;
+}
+
+.Times1 >h3 {
+    font-size: 25px;
 }
 
 footer {
