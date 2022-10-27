@@ -31,35 +31,35 @@ h6 {
     font-family: 'Inter Tight', sans-serif;
 }
 
-.primary {
+.primary:not(g) {
     color: var(--accent-primary);
 }
 
-.secondary {
+.secondary:not(g) {
     color: var(--accent-secondary);
 }
 
-.white {
+.white:not(g) {
     color: white;
 }
 
-.black {
+.black:not(g) {
     color: black;
 }
 
-.bg-primary {
+.bg-primary:not(g) {
     background-color: var(--accent-primary);
 }
 
-.bg-secondary {
-    color: var(--accent-secondary);
+.bg-secondary:not(g) {
+    background-color: var(--accent-secondary);
 }
 
-.bg-white {
+.bg-white:not(g) {
     background-color: white;
 }
 
-.bg-black {
+.bg-black:not(g) {
     background-color: black;
 }
 
@@ -105,25 +105,41 @@ h6 {
 
 .logo {
     display: flex;
-    align-items: center;
     text-decoration: none;
+}
+
+.logo.wordmark-logo {
+    align-items: center;
 }
 
 .logomark + .wordmark {
     margin-left: 0.25rem;
 }
 
-.navbar-menu-list {
+.menu-list {
     display: flex;
     list-style: none;
 }
 
+.navbar-menu-list {
+    flex-direction: row;
+}
+
 .navbar-menu-list > li {
-    margin-left: 0.75rem;
+    margin-left: 0.8rem;
+}
+
+.footer-menu-list {
+    flex-direction: column;
+}
+
+.footer-menu-list > li {
+    margin-bottom: 0.8rem;
 }
 
 .button {
     text-decoration: none;
+    border-radius: 2em;
     transition: background-color 100ms ease, color 100ms ease;
 }
 
@@ -131,7 +147,6 @@ h6 {
     color: var(--accent-secondary);
     background-color: var(--accent-primary-0);
     padding: 0.3em 0.6em;
-    border-radius: 1.6em;
 }
 
 .button.link:hover {
@@ -146,7 +161,6 @@ h6 {
 .button.link2 {
     background-color: #ffffff00;
     padding: 0.3em 0.6em;
-    border-radius: 1.6em;
 }
 
 .button.link2:hover {
@@ -181,9 +195,8 @@ h6 {
 }
 
 .button.tour {
-    font-size: 2rem;
-    padding: 0.5em 0.75em;
-    border-radius: 2em;
+    font-size: 1.75rem;
+    padding: 0.6em 0.8em;
     outline: 0.1em solid white;
 }
 
@@ -195,4 +208,19 @@ h6 {
 
 .footer {
     background-color: var(--footer-background);
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.button.contact {
+    padding: 0.5em 0.75em;
+    outline: 0.1em solid white;
 }
