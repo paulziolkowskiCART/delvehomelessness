@@ -1,3 +1,4 @@
+/* Beginning of the About Us page */
 header {
     background-color: darkgrey;
 }
@@ -72,14 +73,14 @@ main {
     width: 100%;
 }
 
-main section:first-child {
+.Homes {
     width: 100%;
     text-align: center;
     display: block;
     background-color: rgb(61, 64, 66);
 }
 
-main section {
+section.flex  {
     width: 100%;
     display: flex;
    flex-wrap: wrap;
@@ -181,6 +182,90 @@ h5 {
 .Serving > .right {
     margin-left: auto;
     padding-top: 10%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* This is the end of the About Us page */
+/* Beginning of Tour page */
+header {
+    background-color: darkgrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 600px;
+}
+
+nav.main-nav {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: rgb(33, 58, 39);
+    outline: 1px solid white;
+    border-radius: 5%;
+    background-color: rgba(125, 140, 152, 0.285);
+    padding: 0.2rem;
+}
+
+body {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    width: 60%;
+}
+
+.hero2 {
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    background-image: url(Website-Images/safe-republic-PyQ_vNo04ig-unsplash.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content2 {
+    background-color: black;
+    width: 20%;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.locations {
+    background-color: #F5F5F5;
+    color: black;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Schedule {
+    background-color: #DDDDDD;
+    width: 100%;
+    
 }
 
 footer {
