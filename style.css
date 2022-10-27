@@ -9,7 +9,9 @@
     --accent-primary-75: #28aae075;
     --accent-primary-gradient-stop: #0080b5;
     --accent-secondary: #1b1564;
-    --header-background: #f0f0f0;
+    --header-background: white;
+    --footer-background: black;
+    --max-content-width: calc(100% - 16rem);
 }
 
 *,
@@ -37,6 +39,34 @@ h6 {
     color: var(--accent-secondary);
 }
 
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.bg-primary {
+    background-color: var(--accent-primary);
+}
+
+.bg-secondary {
+    color: var(--accent-secondary);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.logomark-home.white {
+    fill: white;
+}
+
 .logomark-home-gradient-stop1 {
     stop-color: var(--accent-primary);
 }
@@ -49,6 +79,10 @@ h6 {
     fill: var(--accent-secondary);
 }
 
+.logomark-d.white {
+    fill: white;
+}
+
 .wordmark {
     font-family: 'Inter Tight', sans-serif;
     font-size: x-large;
@@ -56,12 +90,12 @@ h6 {
 }
 
 .navbar {
-    background-color: #fff;
+    background-color: var(--header-background);
     padding: 1rem 0;
 }
 
 .navbar-content {
-    max-width: calc(100% - 16rem);
+    max-width: var(--max-content-width);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -75,8 +109,8 @@ h6 {
     text-decoration: none;
 }
 
-.logo > * {
-    margin-right: 0.25rem;
+.logomark + .wordmark {
+    margin-left: 0.25rem;
 }
 
 .navbar-menu-list {
@@ -88,41 +122,39 @@ h6 {
     margin-left: 0.75rem;
 }
 
-.navbar-button {
+.button {
+    text-decoration: none;
+    transition: background-color 100ms ease, color 100ms ease;
+}
+
+.button.link {
     color: var(--accent-secondary);
     background-color: var(--accent-primary-0);
     padding: 0.3em 0.6em;
     border-radius: 1.6em;
-    text-decoration: none;
-    transition: background-color 100ms ease, color 100ms ease;
 }
 
-.navbar-button:hover {
-    color: #000;
+.button.link:hover {
+    color: black;
     background-color: var(--accent-primary-25);
 }
 
-.navbar-button:active {
+.button.link:active {
     outline: 0.1em solid var(--accent-secondary);
 }
 
-.button {
-    color: var(--accent-secondary);
-    box-sizing: content-box;
-    background-color: var(--accent-primary-50);
-    padding: 0.5em 0.75em;
-    border-radius: 2em;
-    text-decoration: none;
-    transition: background-color 100ms ease, color 100ms ease;
+.button.link2 {
+    background-color: #ffffff00;
+    padding: 0.3em 0.6em;
+    border-radius: 1.6em;
 }
 
-.button:hover {
-    color: #000;
-    background-color: var(--accent-primary-25);
+.button.link2:hover {
+    background-color: #ffffff25;
 }
 
-.button:active {
-    outline: 0.1em solid var(--accent-secondary);
+.button.link2:active {
+    outline: 0.1em solid white;
 }
 
 .hero {
@@ -131,32 +163,36 @@ h6 {
 }
 
 .hero-content {
-    max-width: 33%;
+    max-width: 33.333%;
     min-height: 70vh;
     margin-left: 8rem;
 }
 
 .hero-title {
-    color: #fff;
+    color: white;
     font-size: 3rem;
     margin-bottom: 0.2em;
 }
 
 .hero-subtitle {
-    color: #fff;
+    color: white;
     font-size: 1.5rem;
     margin-bottom: 2em;
 }
 
-.hero-tour {
-    color: white;
-    background-color: #ffffff00;
-    outline: 0.1em solid white;
+.button.tour {
     font-size: 2rem;
+    padding: 0.5em 0.75em;
+    border-radius: 2em;
+    outline: 0.1em solid white;
 }
 
-.hero-tour:hover {
-    color: #000;
+.button.tour:hover {
+    color: black;
     background-color: white;
-    outline: 0.1em solid #ffffff00;
+    outline: 0em solid;
+}
+
+.footer {
+    background-color: var(--footer-background);
 }
