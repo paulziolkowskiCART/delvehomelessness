@@ -11,7 +11,7 @@
     --accent-secondary: #1b1564;
     --header-background: white;
     --footer-background: black;
-    --max-content-width: calc(100% - 16rem);
+    --max-content-width: calc(100% - 12vw);
 }
 
 *,
@@ -22,12 +22,29 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    margin-bottom: 0.2em;
     font-family: 'Inter Tight', sans-serif;
 }
 
@@ -89,6 +106,8 @@ h6 {
     font-weight: 800;
 }
 
+/* Navbar */
+
 .navbar {
     background-color: var(--header-background);
     padding: 1rem 0;
@@ -98,7 +117,7 @@ h6 {
     max-width: var(--max-content-width);
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
 }
@@ -171,21 +190,28 @@ h6 {
     outline: 0.1em solid white;
 }
 
+.content {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero */
+
 .hero {
     background: fixed padding-box url('img/hero.jpg') center/cover;
     padding-top: 10vh;
 }
 
 .hero-content {
-    max-width: 33.333%;
+    max-width: 640px;
     min-height: 70vh;
-    margin-left: 8rem;
+    margin-left: 6vw;
 }
 
 .hero-title {
     color: white;
-    font-size: 3rem;
-    margin-bottom: 0.2em;
 }
 
 .hero-subtitle {
@@ -206,6 +232,41 @@ h6 {
     outline: 0em solid;
 }
 
+/* Main */
+
+.homes {
+    padding: 2rem 0;
+}
+
+.homes-subtitle {
+    margin-bottom: 2em;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.card {
+    min-width: calc(40% - 1rem);
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+    border: 0.1em solid rgba(128, 128, 128, 0.50);
+    overflow: hidden;
+}
+
+.card:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.card-img {
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Footer */
+
 .footer {
     background-color: var(--footer-background);
     padding: 2rem 0;
@@ -215,7 +276,6 @@ h6 {
     max-width: var(--max-content-width);
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 }
