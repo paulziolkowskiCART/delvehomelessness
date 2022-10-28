@@ -206,6 +206,11 @@ img {
     width: 600px;
 }
 
+li a.active {
+    font-weight: bold;
+   color:  rgb(33, 58, 39);
+}
+
 nav.main-nav {
     width: 100%;
     max-width: 1280px;
@@ -285,13 +290,81 @@ body {
     margin-left: 6%;
     width: 20%;
     border-radius: 5%;
+    padding-bottom: 1%;
 }
 
 .Times1 >h3 {
     font-size: 25px;
 }
 
+.Form {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
 footer {
     background-color: black;
     color: white;
+}
+
+/* This is the end of the Tour Page */
+/* Beginning of Experience Page */
+header {
+background-color: darkgrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 600px;
+}
+
+li a.active {
+    font-weight: bold;
+   color:  rgb(33, 58, 39);
+}
+
+nav.main-nav {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: rgb(33, 58, 39);
+    outline: 1px solid white;
+    border-radius: 5%;
+    background-color: rgba(125, 140, 152, 0.285);
+    padding: 0.2rem;
+}
+
+body {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    width: 60%;
+}
+
+.hero3 {
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    background-image: url(Website-Images/jez-timms-4xLteCXh6X0-unsplash.jpg);
+    justify-content: center;
+    align-items: center;
 }
