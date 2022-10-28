@@ -200,7 +200,6 @@ h6 {
 /* Hero */
 
 .hero {
-    background: fixed padding-box url('img/hero.jpg') center/cover;
     padding-top: 10vh;
 }
 
@@ -242,27 +241,21 @@ h6 {
     margin-bottom: 2em;
 }
 
-.card-container {
+.cards {
     display: flex;
-    overflow-x: scroll;
+    justify-content: space-between;
 }
 
 .card {
-    min-width: calc(40% - 1rem);
-    background-color: #f0f0f0;
+    width: calc(33.333% - 1%);
+    height: 408px;
     border-radius: 1rem;
-    border: 0.1em solid rgba(128, 128, 128, 0.50);
     overflow: hidden;
+    transition: box-shadow 400ms ease-out;
 }
 
-.card:not(:first-child) {
-    margin-left: 1rem;
-}
-
-.card-img {
-    min-width: 100%;
-    max-width: 100%;
-    object-fit: contain;
+.card:hover {
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
