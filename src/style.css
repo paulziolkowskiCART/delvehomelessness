@@ -368,3 +368,25 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.hero-content3 {
+    background-color: black;
+    width: 20%;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Triple {
+    color: black;
+    background-color: #DDDDDD;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.line {
+    margin: 0;
+}
