@@ -378,15 +378,48 @@ body {
     text-align: center;
 }
 
-.Triple {
+.exp {
     color: black;
     background-color: #DDDDDD;
     width: 100%;
-    padding: 1%;
-    display: flex;
+    padding: 2%;
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
 }
 
-.line {
-    margin: 0;
+.topimage,
+.middleimage {
+    width:50%;
+    object-fit: cover;
+}
+
+.top-text,
+.middle-text,
+.bottom-text {
+    width:40%;
+    text-align: left;
+    height:677px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:30px;
+}
+
+.top-text p,
+.middle-text p,
+.bottom-text p {
+    font-size:20px;
+}
+
+.middle-text {
+    text-align: right;
+}
+
+.Left1.line-left {
+    margin-right: 0;
+    margin: auto;
+} 
+
+.line-right {
+    margin-left: 100%;
 }
