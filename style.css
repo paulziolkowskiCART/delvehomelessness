@@ -48,7 +48,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    background-image: url(Website-Images/apartment-1853196_1920.jpg);
+    background-image: url(imgs/apartment-1853196_1920.jpg);
     justify-content: center;
     align-items: center;
 }
@@ -248,7 +248,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    background-image: url(Website-Images/safe-republic-PyQ_vNo04ig-unsplash.jpg);
+    background-image: url(imgs/safe-republic-PyQ_vNo04ig-unsplash.jpg);
     justify-content: center;
     align-items: center;
 }
@@ -364,7 +364,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    background-image: url(Website-Images/jez-timms-4xLteCXh6X0-unsplash.jpg);
+    background-image: url(imgs/jez-timms-4xLteCXh6X0-unsplash.jpg);
     justify-content: center;
     align-items: center;
 }
