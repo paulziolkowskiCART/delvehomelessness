@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Amenities</title>
+    <title>DelveHomes</title>
 </head>
 <body>
     <header>
@@ -26,22 +26,79 @@
                 </a>
                 <nav class="navbar-menu">
                     <ul class="menu-list navbar-menu-list">
-                        <li><a class="button link" href="/">Home</a></li>
-                        <li><a class="button link" href="/about.html">About</a></li>
-                        <li><a class="button link" href="/experience.html">Experience</a></li>
-                        <li><a class="button link" href="/amenities.html">Amenities</a></li>
-                        <li><a class="button link" href="/tour.html">Tour</a></li>
+                        <li><a class="btn btn-link" href="/">Home</a></li>
+                        <li><a class="btn btn-link" href="/about.html">About</a></li>
+                        <li><a class="btn btn-link" href="/experience.html">Experience</a></li>
+                        <li><a class="btn btn-link" href="/amenities.html">Amenities</a></li>
+                        <li><a class="btn btn-link" href="/tour.html">Tour</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <section class="hero" style="background: fixed padding-box url('img/hero.jpg') center/cover;">
+        <section class="hero" id="hero" style="background: fixed padding-box url('img/amenities.png') center/cover;">
             <div class="hero-content">
-                <h1 class="hero-title">Amenities</h1>
+                <h1 class="hero-title" style="color: black;">Amenities</h1>
+                <a href="#automation" class="arrow-btn">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="arrow-bg"><circle cx="16" cy="16" r="16" fill="#00000000"/></g>
+                        <g class="arrow-down"><path d="M16 6V26M16 26L8 18M16 26L24 18" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+                    </svg>
+                </a>
             </div>
         </section>
     </header>
     <main>
+        <section class="automation" id="automation">
+            <div class="content automation-content">
+                <h2 class="automation-title">Experience <span class="italics">automation</span> like no other</h2>
+                <div class="line-accent"></div>
+                <p class="automation-para">Automation powers DelveHomes' customers' experiences and enhances their services.</p>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="content features-content">
+                <h2>Features</h2>
+                <div class="line-accent"></div>
+                <div class="feature-cards">
+                    <div class="card feature-card">
+                        <h3 class="white">A Touch of Class</h3>
+                        <div class="line-accent" style="background-color: white;"></div>
+                        <p class="card-para white">DelveHomes is committed to offering you quality underground homes with a touch of class and luxury.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <h3 class="white">Personalized Feeling</h3>
+                        <div class="line-accent" style="background-color: white;"></div>
+                        <p class="card-para white">DelveHomes has offered the widest selection of homes in the <span class="italics">Machine</span> since its inception and is committed to providing underground homes catered for your personalization.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <h3 class="white">Convenience at Reach</h3>
+                        <div class="line-accent" style="background-color: white;"></div>
+                        <p class="card-para white">Each DelveHomes underground home is fitted with buttons always at reach to accommodate each and every single one of your needs. Want something, just press a button!</p>
+                    </div>
+                    <div class="card feature-card">
+                        <h3 class="white">Safety &amp; Security</h3>
+                        <div class="line-accent" style="background-color: white;"></div>
+                        <p class="card-para white">Safety &amp; security is at DelveHomes' forefront and they are committed to providing the best of it. Each DelveHomes underground home is tested against unwanted break-ins and breaches.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <h3 class="white">Ease of Access</h3>
+                        <div class="line-accent" style="background-color: white;"></div>
+                        <p class="card-para white">Each DelveHomes underground home is always three seconds and under in proximity to the tunnel and no more than five seconds to the Committee, do you ever decide to vacate your home.</p>
+                    </div>
+                    <div class="card feature-card">
+                        <h3 class="white">Lasting Support</h3>
+                        <div class="line-accent" style="background-color: white;"></div>
+                        <p class="card-para white">DelveHomes builds home with longevity and durability in mind. DelveHomes homes can sustain even the most severe of conditions (e.g. the <span class="italics">Machine</span> suddenly stopping.)</p>
+                    </div>
+                    <div class="card feature-card">
+                        <h3 class="white">Satisfaction Guaranteed</h3>
+                        <div class="line-accent" style="background-color: white;"></div>
+                        <p class="card-para white">DelveHomes believes that you will be fully satisfied with their broad selection of underground homes in the <span class="italics">Machine</span>, or your eviction from the <span class="italics">Machine</span> free of charge.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="features-bg"></div> -->
+        </section>
     </main>
     <footer>
         <section class="footer">
@@ -54,30 +111,14 @@
                 </a>
                 <nav class="footer-menu">
                     <ul class="menu-list footer-menu-list">
-                        <li><a class="white button link2" href="/">Home</a></li>
-                        <li><a class="white button link2" href="/about.html">About</a></li>
-                        <li><a class="white button link2" href="/experience.html">Experience</a></li>
-                        <li><a class="white button link2" href="/amenities.html">Amenities</a></li>
-                        <li><a class="white button link2" href="/tour.html">Tour</a></li>
+                        <li><a class="white btn btn-link2" href="/">Home</a></li>
+                        <li><a class="white btn btn-link2" href="/about.html">About</a></li>
+                        <li><a class="white btn btn-link2" href="/experience.html">Experience</a></li>
+                        <li><a class="white btn btn-link2" href="/amenities.html">Amenities</a></li>
+                        <li><a class="white btn btn-link2" href="/tour.html">Tour</a></li>
                     </ul>
                 </nav>
-                <nav class="footer-menu">
-                    <ul class="menu-list footer-menu-list">
-                        <li><a class="white button link2" href="#">Link</a></li>
-                        <li><a class="white button link2" href="#">Link</a></li>
-                        <li><a class="white button link2" href="#">Link</a></li>
-                        <li><a class="white button link2" href="#">Link</a></li>
-                        <li><a class="white button link2" href="#">Link</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-menu">
-                    <ul class="menu-list footer-menu-list">
-                        <li><a class="white button link2" href="#">Link</a></li>
-                        <li><a class="white button link2" href="#">Link</a></li>
-                        <li><a class="white button link2" href="#">Link</a></li>
-                    </ul>
-                </nav>
-                <a href="#" class="white button link2 contact">Contact Us</a>
+                <a href="#" class="white btn btn-link2 btn-contact">Contact</a>
             </div>
         </section>
     </footer>

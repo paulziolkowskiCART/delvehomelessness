@@ -7,7 +7,7 @@
     --accent-primary-25: #28aae025;
     --accent-primary-50: #28aae050;
     --accent-primary-75: #28aae075;
-    --accent-primary-gradient-stop: #0080b5;
+    --accent-primary-gradient-stop-color: #0080b5;
     --accent-secondary: #1b1564;
     --header-background: white;
     --footer-background: black;
@@ -46,6 +46,10 @@ h5,
 h6 {
     margin-bottom: 0.2em;
     font-family: 'Inter Tight', sans-serif;
+}
+
+.italics {
+    font-style: italic;
 }
 
 .primary:not(g) {
@@ -89,7 +93,7 @@ h6 {
 }
 
 .logomark-home-gradient-stop2 {
-    stop-color: var(--accent-primary-gradient-stop);
+    stop-color: var(--accent-primary-gradient-stop-color);
 }
 
 .logomark-d {
@@ -148,6 +152,10 @@ h6 {
     margin-left: 0.8rem;
 }
 
+.footer-menu {
+    margin: 0 auto 0 8rem;
+}
+
 .footer-menu-list {
     flex-direction: column;
 }
@@ -156,37 +164,37 @@ h6 {
     margin-bottom: 0.8rem;
 }
 
-.button {
+.btn {
     text-decoration: none;
     border-radius: 2em;
     transition: background-color 100ms ease, color 100ms ease;
 }
 
-.button.link {
+.btn.btn-link {
     color: var(--accent-secondary);
     background-color: var(--accent-primary-0);
     padding: 0.3em 0.6em;
 }
 
-.button.link:hover {
+.btn.btn-link:hover {
     color: black;
     background-color: var(--accent-primary-25);
 }
 
-.button.link:active {
+.btn.btn-link:active {
     outline: 0.1em solid var(--accent-secondary);
 }
 
-.button.link2 {
+.btn.btn-link2 {
     background-color: #ffffff00;
     padding: 0.3em 0.6em;
 }
 
-.button.link2:hover {
+.btn.btn-link2:hover {
     background-color: #ffffff25;
 }
 
-.button.link2:active {
+.btn.btn-link2:active {
     outline: 0.1em solid white;
 }
 
@@ -200,32 +208,49 @@ h6 {
 /* Hero */
 
 .hero {
+    padding: 5vh 0;
+}
+
+[class="hero-content"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+}
+
+.homepage-hero {
+    padding: 0;
     padding-top: 10vh;
 }
 
-.hero-content {
+.homepage-hero-content {
     max-width: 640px;
     min-height: 70vh;
     margin-left: 6vw;
 }
 
-.hero-title {
+.hero-title, .homepage-hero-title {
     color: white;
 }
 
-.hero-subtitle {
+.hero-title {
+    font-size: 4rem;
+}
+
+.hero-subtitle, .homepage-hero-subtitle {
     color: white;
     font-size: 1.5rem;
     margin-bottom: 2em;
 }
 
-.button.tour {
+.btn.btn-tour {
     font-size: 1.75rem;
     padding: 0.6em 0.8em;
     outline: 0.1em solid white;
 }
 
-.button.tour:hover {
+.btn.btn-tour:hover {
     color: black;
     background-color: white;
     outline: 0em solid;
@@ -233,7 +258,7 @@ h6 {
 
 /* Main */
 
-.homes {
+.homes, .automation {
     padding: 2rem 0;
 }
 
@@ -246,21 +271,84 @@ h6 {
     justify-content: space-between;
 }
 
+.feature-cards {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex: content;
+    flex-wrap: wrap;
+}
+
 .card {
-    width: calc(33.333% - 1%);
-    height: 408px;
+    text-decoration: none;
+    background-color: rgb(240, 240, 240);
+    width: 32.333%;
+    padding: 1rem;
     border-radius: 1rem;
     overflow: hidden;
-    transition: box-shadow 400ms ease-out;
+    transition: background-color 250ms ease-out, box-shadow 400ms ease-out;
+}
+
+.card.feature-card {
+    background-color: #333;
+    margin: 0.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 0.2rem solid white;
+}
+
+.card-banner {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    color: black;
+}
+
+.line-accent {
+    margin: 1rem 0;
+    padding: 0;
+    background-color: black;
+    width: 2rem;
+    height: 1px;
+}
+
+.card-para {
+    color: black;
 }
 
 .card:hover {
+    background-color: rgb(235, 235, 235);
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.card.feature-card:hover {
+    background-color: #111;
+}
+
+.automation {
+    background-color: #ddd;
+}
+
+.automation-content {
+    align-items: center;
+}
+
+.features {
+    background: linear-gradient(to bottom, white, transparent), url('img/features-layer.png') center/cover;
+    /* min-height: 1000px; */
+}
+
+.features-content {
+    padding: 6rem 0;
 }
 
 /* Footer */
 
 .footer {
+    position: sticky;
     background-color: var(--footer-background);
     padding: 2rem 0;
 }
@@ -273,7 +361,7 @@ h6 {
     align-items: flex-start;
 }
 
-.button.contact {
+.btn.btn-contact {
     padding: 0.5em 0.75em;
     outline: 0.1em solid white;
 }
