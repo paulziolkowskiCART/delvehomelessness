@@ -286,15 +286,14 @@ h6 {
     padding: 1rem;
     border-radius: 1rem;
     overflow: hidden;
-    transition: background-color 250ms ease-out, box-shadow 400ms ease-out;
+    transition: box-shadow 400ms ease-out;
 }
 
 .card.feature-card {
-    background-color: #333;
+    background: linear-gradient(to bottom, #333, #111);
     margin: 0.5rem;
     padding: 2rem;
     border-radius: 2rem;
-    border: 0.2rem solid white;
 }
 
 .card-banner {
@@ -324,9 +323,9 @@ h6 {
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.card.feature-card:hover {
-    background-color: #111;
-}
+/* .card.feature-card:hover {
+    background: #111;
+} */
 
 .automation {
     background-color: #ddd;
