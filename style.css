@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Inter:wght@400;600;700;800;900&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --accent-primary: #28aae0;
+    --accent-primary-0: #28aae000;
+    --accent-primary-25: #28aae025;
+    --accent-primary-50: #28aae050;
+    --accent-primary-75: #28aae075;
+    --accent-primary-gradient-stop-color: #0080b5;
+    --accent-secondary: #1b1564;
+    --header-background: white;
+    --footer-background: black;
+    --max-content-width: calc(100% - 12vw);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.2em;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.primary:not(g) {
+    color: var(--accent-primary);
+}
+
+.secondary:not(g) {
+    color: var(--accent-secondary);
+}
+
+.white:not(g) {
+    color: white;
+}
+
+.black:not(g) {
+    color: black;
+}
+
+.bg-primary:not(g) {
+    background-color: var(--accent-primary);
+}
+
+.bg-secondary:not(g) {
+    background-color: var(--accent-secondary);
+}
+
+.bg-white:not(g) {
+    background-color: white;
+}
+
+.bg-black:not(g) {
+    background-color: black;
+}
+
+.logomark-home.white {
+    fill: white;
+}
+
+.logomark-home-gradient-stop1 {
+    stop-color: var(--accent-primary);
+}
+
+.logomark-home-gradient-stop2 {
+    stop-color: var(--accent-primary-gradient-stop-color);
+}
+
+.logomark-d {
+    fill: var(--accent-secondary);
+}
+
+.logomark-d.white {
+    fill: white;
+}
+
+.wordmark {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--header-background);
+    padding: 1rem 0;
+}
+
+.navbar-content {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+}
+
+.logo.wordmark-logo {
+    align-items: center;
+}
+
+.logomark + .wordmark {
+    margin-left: 0.25rem;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-menu-list {
+    flex-direction: row;
+}
+
+.navbar-menu-list > li {
+    margin-left: 0.8rem;
+}
+
+.footer-menu {
+    margin: 0 auto 0 8rem;
+}
+
+.footer-menu-list {
+    flex-direction: column;
+}
+
+.footer-menu-list > li {
+    margin-bottom: 0.8rem;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 2em;
+    transition: background-color 100ms ease, color 100ms ease;
+}
+
+.btn.btn-link {
+    color: var(--accent-secondary);
+    background-color: var(--accent-primary-0);
+    padding: 0.3em 0.6em;
+}
+
+.btn.btn-link:hover {
+    color: black;
+    background-color: var(--accent-primary-25);
+}
+
+.btn.btn-link:active {
+    outline: 0.1em solid var(--accent-secondary);
+}
+
+.btn.btn-link2 {
+    background-color: #ffffff00;
+    padding: 0.3em 0.6em;
+}
+
+.btn.btn-link2:hover {
+    background-color: #ffffff25;
+}
+
+.btn.btn-link2:active {
+    outline: 0.1em solid white;
+}
+
+.content {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero */
+
+.hero {
+    padding: 5vh 0;
+}
+
+[class="hero-content"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+}
+
+.homepage-hero {
+    padding: 0;
+    padding-top: 10vh;
+}
+
+.homepage-hero-content {
+    max-width: 640px;
+    min-height: 70vh;
+    margin-left: 6vw;
+}
+
+.hero-title, .homepage-hero-title {
+    color: white;
+}
+
+.hero-title {
+    font-size: 4rem;
+}
+
+.hero-subtitle, .homepage-hero-subtitle {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+
+.btn.btn-tour {
+    font-size: 1.75rem;
+    padding: 0.6em 0.8em;
+    outline: 0.1em solid white;
+}
+
+.btn.btn-tour:hover {
+    color: black;
+    background-color: white;
+    outline: 0em solid;
+}
+
+/* Main */
+
+.homes, .automation {
+    padding: 2rem 0;
+}
+
+.homes-subtitle {
+    margin-bottom: 2em;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-cards {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex: content;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-decoration: none;
+    background-color: rgb(240, 240, 240);
+    width: 32.333%;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: box-shadow 400ms ease-out;
+}
+
+.card.feature-card {
+    background: linear-gradient(to bottom, #333, #111);
+    margin: 0.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.card-banner {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-header {
+    color: black;
+}
+
+.line-accent {
+    margin: 1rem 0;
+    padding: 0;
+    background-color: black;
+    width: 2rem;
+    height: 1px;
+}
+
+.card-para {
+    color: black;
+}
+
+.card:hover {
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* .card.feature-card:hover {
+    background: #111;
+} */
+
+.automation {
+    background-color: #ddd;
+}
+
+.automation-content {
+    align-items: center;
+}
+
+.features {
+    background: linear-gradient(to bottom, white, transparent), url('img/features-layer.png') center/cover;
+    /* min-height: 1000px; */
+}
+
+.features-content {
+    padding: 6rem 0;
+}
+
+/* Footer */
+
+.footer {
+    position: sticky;
+    background-color: var(--footer-background);
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn.btn-contact {
+    padding: 0.5em 0.75em;
+    outline: 0.1em solid white;
+}
