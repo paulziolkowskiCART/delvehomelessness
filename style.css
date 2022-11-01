@@ -364,3 +364,429 @@ h6 {
     padding: 0.5em 0.75em;
     outline: 0.1em solid white;
 }
+/* Ethans Mess */
+/* Beginning of the about page */
+header {
+    background-color: darkgrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 600px;
+}
+
+nav.main-nav {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: rgb(33, 58, 39);
+    outline: 1px solid white;
+    border-radius: 5%;
+    background-color: rgba(125, 140, 152, 0.285);
+    padding: 0.2rem;
+}
+
+body {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    width: 60%;
+}
+
+.hero {
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    background-image: url(img/apartment-1853196_1920.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background-color: black;
+    width: 20%;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Tag-Content {
+    color: white;
+}
+
+main {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Homes {
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: rgb(61, 64, 66);
+}
+
+section.flex  {
+    width: 100%;
+    display: flex;
+   flex-wrap: wrap;
+}
+
+section hr {
+    width: 100px;
+}
+
+Section:nth-child(2) {
+    background-color: lightgray;
+    color: black;
+}
+
+Section:nth-child(2) h3 {
+    margin-left: 5%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card1 {
+    background-color: rgb(121, 115, 115);
+    width: 300px;
+    height: 100px;
+    border-radius: 32px;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 15px;
+}
+
+.card1 >hr {
+    width: 5%;
+}
+
+.card2 {
+    background-color: rgb(121, 115, 115);
+    width: 300px;
+    height: 100px;
+    border-radius: 32px;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 15px;
+}
+
+.card2 >hr {
+    width: 5%;
+}
+
+.card3 {
+    background-color: rgb(121, 115, 115);
+    width: 300px;
+    height: 100px;
+    border-radius: 32px;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 15px;
+}
+
+.card3 >hr {
+    width:  5%;
+}
+
+h4 {
+    font-size: 30px;
+    text-align: left
+}
+
+section:nth-child(3) {
+    background-color: rgb(255, 247, 247);
+    color: black;
+}
+
+.Line {
+    margin: 0;
+}
+
+.Line.right {
+    margin-left: auto;
+}
+
+.Line.Left {
+    margin-left: auto;
+}
+
+.Serving {
+    padding: 5%;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+.Serving > .left {
+    margin-right: auto;
+}
+
+.Serving > .right {
+    margin-left: auto;
+    padding-top: 10%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* This is the end of the About Us page */
+/* Beginning of Tour page */
+header {
+    background-color: darkgrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 600px;
+}
+
+li a.active {
+    font-weight: bold;
+   color:  rgb(33, 58, 39);
+}
+
+nav.main-nav {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: rgb(33, 58, 39);
+    outline: 1px solid white;
+    border-radius: 5%;
+    background-color: rgba(125, 140, 152, 0.285);
+    padding: 0.2rem;
+}
+
+body {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    width: 60%;
+}
+
+.hero2 {
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    background-image: url(img/safe-republic-PyQ_vNo04ig-unsplash.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content2 {
+    background-color: black;
+    width: 20%;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.locations {
+    background-color: #F5F5F5;
+    color: black;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Schedule {
+    background-color: #DDDDDD;
+    width: 100%;
+}
+
+.Schedule >h3 {
+    font-size: 40px;
+}
+
+.Times {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Times1 {
+    background-color: #CCCCCC;
+    margin-left: 6%;
+    width: 20%;
+    border-radius: 5%;
+    padding-bottom: 1%;
+}
+
+.Times1 >h3 {
+    font-size: 25px;
+}
+
+.Form {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* This is the end of the Tour Page */
+/* Beginning of Experience Page */
+header {
+background-color: darkgrey;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 600px;
+}
+
+li a.active {
+    font-weight: bold;
+   color:  rgb(33, 58, 39);
+}
+
+nav.main-nav {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.button:hover {
+    color: rgb(33, 58, 39);
+    outline: 1px solid white;
+    border-radius: 5%;
+    background-color: rgba(125, 140, 152, 0.285);
+    padding: 0.2rem;
+}
+
+body {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    width: 60%;
+}
+
+.hero3 {
+    height: 85vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    background-image: url(img/jez-timms-4xLteCXh6X0-unsplash.jpg);
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content3 {
+    background-color: black;
+    width: 20%;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.exp {
+    color: black;
+    background-color: #DDDDDD;
+    width: 100%;
+    padding: 2%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.topimage,
+.middleimage {
+    width:50%;
+    object-fit: cover;
+}
+
+.top-text,
+.middle-text,
+.bottom-text {
+    width:40%;
+    text-align: left;
+    height:677px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:30px;
+}
+
+.top-text p,
+.middle-text p,
+.bottom-text p {
+    font-size:20px;
+}
+
+.middle-text {
+    text-align: right;
+}
+
+.Left1.line-left {
+    margin-right: 0;
+    margin: auto;
+} 
+
+.line-right {
+    margin-left: 100%;
+}
