@@ -374,7 +374,7 @@ img {
     max-width: 100%;
 }
 
-.logo {
+.logo1 {
     width: 600px;
 }
 
@@ -410,7 +410,7 @@ body {
     width: 60%;
 }
 
-.hero {
+.hero1 {
     height: 85vh;
     background-size: cover;
     background-attachment: fixed;
@@ -420,7 +420,7 @@ body {
     align-items: center;
 }
 
-.hero-content {
+.Ethan-hero-content {
     background-color: black;
     width: 20%;
     color: white;
@@ -429,18 +429,14 @@ body {
     text-align: center;
 }
 
-.Tag-Content {
-    color: white;
-}
-
-main {
+.main {
     color: white;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.Homes {
+.Homes1 {
     width: 100%;
     text-align: center;
     display: block;
@@ -457,13 +453,9 @@ section hr {
     width: 100px;
 }
 
-Section:nth-child(2) {
+.flex {
     background-color: lightgray;
     color: black;
-}
-
-Section:nth-child(2) h3 {
-    margin-left: 5%;
 }
 
 .card-container {
@@ -472,6 +464,19 @@ Section:nth-child(2) h3 {
     width: 100%;
     justify-content: space-between;
 }
+
+.center-line-accent {
+    margin: 1rem auto;
+}
+
+
+.left-line-accent {
+    margin: 1rem auto 1rem 0;
+} 
+
+.right-line-accent {
+    margin: 1rem 0 1rem auto;
+} 
 
 .card1 {
     background-color: rgb(121, 115, 115);
@@ -545,6 +550,10 @@ h5 {
     font-size: 30px;
 }
 
+.right-text-align {
+    text-align: right;
+}
+
 .Serving > .left {
     margin-right: auto;
 }
@@ -569,22 +578,9 @@ img {
     max-width: 100%;
 }
 
-.logo {
-    width: 600px;
-}
-
 li a.active {
     font-weight: bold;
    color:  rgb(33, 58, 39);
-}
-
-nav.main-nav {
-    width: 100%;
-    max-width: 1280px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
 }
 
 .button:hover {
@@ -644,6 +640,7 @@ body {
 
 .Schedule >h3 {
     font-size: 40px;
+    margin-left: 6%;
 }
 
 .Times {
@@ -658,6 +655,7 @@ body {
     width: 20%;
     border-radius: 5%;
     padding-bottom: 1%;
+    padding: 1rem;
 }
 
 .Times1 >h3 {
@@ -685,22 +683,9 @@ img {
     max-width: 100%;
 }
 
-.logo {
-    width: 600px;
-}
-
 li a.active {
     font-weight: bold;
    color:  rgb(33, 58, 39);
-}
-
-nav.main-nav {
-    width: 100%;
-    max-width: 1280px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
 }
 
 .button:hover {
@@ -743,6 +728,10 @@ body {
     border-radius: 2rem;
     padding: 1rem;
     text-align: center;
+}
+
+.Exp-Image {
+    border-radius: 1rem;
 }
 
 .exp {
