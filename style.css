@@ -663,9 +663,8 @@ body {
 }
 
 .Form {
-    display: flex;
     width: 50%;
-    justify-content: right;
+    padding-left: 40%;
 }
 
 footer {
