@@ -258,7 +258,16 @@ h6 {
 
 /* Main */
 
-.homes, .automation {
+.Intro-content {
+    align-items: center;
+
+}
+
+.intro {
+    background-color: #ddd;
+}
+
+.homes, .automation, .intro {
     padding: 2rem 0;
 }
 
