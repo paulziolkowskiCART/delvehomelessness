@@ -540,6 +540,7 @@ section hr {
     display: flex;
     flex-direction: column;
     margin-left: auto;
+    align-items: flex-end;
 }
 
 h4 {
@@ -800,4 +801,14 @@ body {
 
 .line-right {
     margin-left: 100%;
+}
+
+.left > p,
+.right > p {
+    line-height: 1.4em;
+}
+
+.about-image {
+    margin: 0.5rem;
+    border-radius: 1rem;
 }
