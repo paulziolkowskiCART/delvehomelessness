@@ -356,12 +356,14 @@ h6 {
 /* Footer */
 
 .footer {
-    position: sticky;
     background-color: var(--footer-background);
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-content {
+    min-width: var(--max-content-width);
     max-width: var(--max-content-width);
     margin: 0 auto;
     display: flex;
@@ -369,11 +371,18 @@ h6 {
     align-items: flex-start;
 }
 
-.copyright-info {
+.copyright {
     display: flex;
     max-width: var(--max-content-width);
     margin: 1rem auto 0;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.divider {
+    width: 1px;
+    height: inherit;
+    margin: 0 1rem;
+    background-color: #ffffff75;
 }
 
 .small {
