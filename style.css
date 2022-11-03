@@ -369,6 +369,17 @@ h6 {
     align-items: flex-start;
 }
 
+.copyright-info {
+    display: flex;
+    max-width: var(--max-content-width);
+    margin: 1rem auto 0;
+    justify-content: space-between;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
 .btn.btn-contact {
     padding: 0.5em 0.75em;
     outline: 0.1em solid white;
