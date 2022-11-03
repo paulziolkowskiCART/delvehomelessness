@@ -290,29 +290,26 @@ h6 {
 
 .card {
     text-decoration: none;
-    background-color: rgb(240, 240, 240);
+    color: white;
+    background: linear-gradient(to bottom, #333, #111);
     width: 32.333%;
-    padding: 1rem;
     border-radius: 1rem;
+    outline: 0.1rem solid #111;
     overflow: hidden;
-    transition: box-shadow 400ms ease-out;
+    transition: outline 80ms ease-in-out, box-shadow 80ms ease-in-out;
+}
+
+.card-content {
+    padding: 2rem;
 }
 
 .card.feature-card {
-    background: linear-gradient(to bottom, #333, #111);
     margin: 0.5rem;
     padding: 2rem;
-    border-radius: 2rem;
 }
 
 .card-banner {
-    margin-bottom: 0.5rem;
     width: 100%;
-    border-radius: 0.5rem;
-}
-
-.card-header {
-    color: black;
 }
 
 .line-accent {
@@ -324,17 +321,13 @@ h6 {
 }
 
 .card-para {
-    color: black;
+    color: white;
 }
 
-.card:hover {
-    background-color: rgb(235, 235, 235);
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+[class="card"]:hover {
+    outline: 0.2rem solid #111;
+    box-shadow: 0.4rem 0.4rem 1rem #11111175;
 }
-
-/* .card.feature-card:hover {
-    background: #111;
-} */
 
 .automation {
     background-color: #ddd;
