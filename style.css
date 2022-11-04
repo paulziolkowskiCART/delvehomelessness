@@ -94,6 +94,14 @@ p {
     fill: white;
 }
 
+.logomark-home.black {
+    fill: black;
+}
+
+.logomark-home.secondary {
+    fill: var(--accent-secondary);
+}
+
 .logomark-home-gradient-stop1 {
     stop-color: var(--accent-primary);
 }
@@ -108,6 +116,14 @@ p {
 
 .logomark-d.white {
     fill: white;
+}
+
+.logomark-d.black {
+    fill: black;
+}
+
+.logomark-d.secondary {
+    fill: var(--accent-secondary);
 }
 
 .wordmark {
@@ -232,7 +248,7 @@ p {
 
 .homepage-hero-content {
     max-width: 640px;
-    min-height: 70vh;
+    min-height: 79vh;
     margin-left: 6vw;
 }
 
@@ -270,6 +286,13 @@ p {
 
 .intro {
     background-color: #eee;
+}
+
+.intro-icon,
+.automation-icon {
+    min-width: 80px;
+    max-width: 80px;
+    margin-bottom: 0.5rem;
 }
 
 .quality-icon {
