@@ -20,6 +20,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-color: black white;
+    scrollbar-width: thin;
 }
 
 h1 {
@@ -267,11 +269,17 @@ p {
 }
 
 .intro {
-    background-color: #ddd;
+    background-color: #eee;
+}
+
+.quality-icon {
+    min-width: 140px;
+    max-width: 140px;
+    margin-bottom: 0.5rem;
 }
 
 .quality {
-    /* background-color: #ddd; */
+    /* background-color: #eee; */
 }
 
 .intro,
@@ -288,6 +296,10 @@ p {
 .cards {
     display: flex;
     justify-content: space-between;
+}
+
+.home-divider {
+    margin-top: 3rem;
 }
 
 .feature-cards {
@@ -309,6 +321,7 @@ p {
 
 .card-content {
     padding: 2rem;
+    /* transition: padding 80ms ease-in-out; */
 }
 
 .feature-card {
@@ -320,6 +333,10 @@ p {
     overflow: hidden;
     margin-bottom: 1rem;
     padding: 2rem;
+}
+
+.card-content:hover {
+    /* padding: 2.3rem; */
 }
 
 .feature-card-icon {
@@ -347,12 +364,12 @@ p {
 }
 
 [class="card"]:hover {
-    outline: 0.2rem solid #111;
+    outline: 0.3rem solid #111;
     box-shadow: 0.4rem 0.4rem 1rem #11111175;
 }
 
 .automation {
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 .automation-content {
@@ -496,9 +513,9 @@ section.flex  {
    flex-wrap: wrap;
 }
 
-section hr {
+/* section hr {
     width: 100px;
-}
+} */
 
 .flex {
     background-color: lightgray;
@@ -679,7 +696,7 @@ body {
 }
 
 .Schedule {
-    background-color: #DDDDDD;
+    background-color: #eeeDDD;
     width: 100%;
 }
 
@@ -780,7 +797,7 @@ body {
 
 .exp {
     color: black;
-    background-color: #DDDDDD;
+    background-color: #eeeDDD;
     width: 100%;
     padding: 2%;
     flex-wrap: wrap;
