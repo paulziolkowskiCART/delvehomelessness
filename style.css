@@ -301,10 +301,6 @@ p {
     margin-bottom: 0.5rem;
 }
 
-.quality {
-    /* background-color: #eee; */
-}
-
 .intro,
 .homes,
 .quality,
@@ -358,10 +354,6 @@ p {
     padding: 2rem;
 }
 
-.card-content:hover {
-    /* padding: 2.3rem; */
-}
-
 .feature-card-icon {
     width: 0;
     min-width: 4rem;
@@ -379,11 +371,6 @@ p {
     background-color: black;
     width: 2rem;
     height: 1px;
-}
-
-.card-para {
-    /* line-height: 1.4em; */
-    /* color: white; */
 }
 
 [class="card"]:hover {
@@ -499,7 +486,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    background-image: url(img/apartment-1853196_1920.jpg);
+    background-image: url(img/malek-bensetti-RYrhCpsh-tQ-unsplash.jpg);
     justify-content: center;
     align-items: center;
 }
@@ -710,12 +697,33 @@ body {
     text-align: center;
 }
 
+.TourBuilding {
+    background: fixed padding-box url(img/UDH-Hero.png) center/cover;
+    width: 100%;
+    height: 900px;
+}
+
 .locations {
     background-color: #F5F5F5;
     color: black;
     justify-content: center;
     width: 100%;
     text-align: center;
+}
+
+.Company-Homes {
+    column-count: 3;
+    column-gap: 1rem;
+    margin: 3rem;
+}
+
+.Company {
+    /* background-color: #eee; */
+    padding: 1rem;
+    outline: 1px solid #111;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-align: left;
 }
 
 .Schedule {
@@ -863,11 +871,6 @@ body {
 
 .line-right {
     margin-left: 100%;
-}
-
-.left > p,
-.right > p {
-    /* line-height: 1.4em; */
 }
 
 .about-image {
