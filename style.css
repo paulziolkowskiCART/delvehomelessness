@@ -746,13 +746,17 @@ body {
 }
 
 .Schedule {
-    background-color: #eeeDDD;
+    background-color: #eee;
     width: 100%;
 }
 
 .Schedule >h3 {
     font-size: 40px;
     margin-left: 6%;
+}
+
+.em-margin {
+    margin-bottom: 1em;
 }
 
 .Times {
@@ -762,12 +766,12 @@ body {
 }
 
 .Times1 {
-    background-color: #CCCCCC;
     margin-left: 6%;
     width: 20%;
-    border-radius: 5%;
+    border-radius: 1rem;
     padding-bottom: 1%;
-    padding: 1rem;
+    padding: 2rem;
+    outline: 0.1em solid #111;
 }
 
 .Times1 >h3 {
