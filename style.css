@@ -32,6 +32,10 @@ h2 {
     font-size: 2rem;
 }
 
+.small-h2 {
+    font-size: 1.25rem;
+}
+
 h3 {
     font-size: 1.5rem;
 }
@@ -301,9 +305,19 @@ p {
     margin-bottom: 0.5rem;
 }
 
+.quality {
+    /* background-color: #eee; */
+}
+
+.testimonials > .content {
+    align-items: center;
+    text-align: center;
+}
+
 .intro,
 .homes,
 .quality,
+.testimonials,
 .automation {
     padding: 3rem 0;
 }
