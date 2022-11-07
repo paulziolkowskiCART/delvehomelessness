@@ -59,6 +59,7 @@ h6 {
 }
 
 p {
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
@@ -327,7 +328,7 @@ p {
     padding: 3rem 0;
 }
 
-.homes-subtitle {
+.homes-para {
     margin-bottom: 2em;
 }
 
@@ -342,8 +343,12 @@ p {
 
 .feature-cards {
     margin: 3rem 0;
-    column-count: 3;
-    column-gap: 1rem;
+    /* column-count: 3; */
+    /* column-gap: 1rem; */
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .testimonial-cards {
@@ -372,12 +377,13 @@ p {
 
 .feature-card {
     display: flex;
+    width: 520px;
     color: white;
     background: linear-gradient(to bottom, #333, #111);
     border-radius: 1rem;
     outline: 0.1rem solid #111;
     overflow: hidden;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     padding: 2rem;
 }
 
@@ -409,6 +415,11 @@ p {
 .testimonial-card-content {
     display: flex;
     flex-direction: column;
+}
+
+.testimonial-para,
+.card-para {
+    font-size: 1rem;
 }
 
 .testimonial-para::before {
@@ -447,6 +458,56 @@ p {
 .automation-content {
     align-items: center;
 }
+
+.delveeats-slideshow-thing {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.delveeats-slideshow-thing * {
+    border-radius: 1rem;
+}
+
+.delveeats-slideshow-thing > :first-child {
+    height: 380px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.delveeats-slideshow-thing > :nth-child(2) {
+    height: 500px;
+}
+
+.delveeats-slideshow-thing > :last-child {
+    height: 420px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.delveeats-title {
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.delveeats-logomark {
+    /* display: inline; */
+    height: 3rem;
+}
+
+/* .delveeats-title > span::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.25 35C5.25 36.933 6.817 38.5 8.75 38.5H14C15.933 38.5 17.5 36.933 17.5 35V17.5C17.5 15.567 19.067 14 21 14H29.75C30.4047 14 31.1822 12.5508 30.6929 12.1159L22.3162 4.66997C21.5656 4.00274 20.4344 4.00274 19.6838 4.66997L6.42473 16.4558C5.67752 17.12 5.25 18.072 5.25 19.0717V35Z'/><path d='M29.75 17.5H22.75C21.7835 17.5 21 18.2835 21 19.25V33.25C21 34.2165 21.7835 35 22.75 35H29.75C33.616 35 36.75 31.0825 36.75 26.25C36.75 21.4175 33.616 17.5 29.75 17.5Z'/></svg>");
+} */
 
 .features {
     background: linear-gradient(to bottom, white, transparent), url('img/features-layer.png') center/cover;
@@ -977,5 +1038,21 @@ body {
 
     .testimonial-card {
         width: 100%;
+    }
+
+    .delveeats-slideshow-thing > :first-child {
+        height: 300px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .delveeats-slideshow-thing > :nth-child(2) {
+        height: 400px;
+    }
+
+    .delveeats-slideshow-thing > :last-child {
+        height: 340px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 }
