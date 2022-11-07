@@ -722,6 +722,39 @@ body {
     height: 900px;
 }
 
+.Example-Homes {
+    background-color: #F5F5F5;
+    color: black;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Available-Homes {
+    display: flex;
+    margin: 3rem;
+    gap: 1rem;
+}
+
+.Available {
+    padding: 1rem;
+    outline: 1px solid #111;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.UDH {
+    align-self: center;
+    border-radius: 1rem;
+    outline: 1px solid #111;
+    border-spacing: 1rem;
+}
+
 .locations {
     background-color: #F5F5F5;
     color: black;
@@ -845,18 +878,37 @@ body {
     text-align: center;
 }
 
+.Home-Experiences {
+    text-align: center;
+}
+
 .Exp-Image {
-    border-radius: 1rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+body > main > section > div > div.Middle1 > div.middleimage > img {
+    border-radius: 1rem 0 0 1rem;
 }
 
 .exp {
     color: black;
     background-color: #eeeDDD;
     width: 100%;
-    padding: 2%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.Top1,
+.Middle1,
+.Bottom1 {
+    display: flex;
+    padding: 3rem 0;
+}
+
+.Middle1 {
+    justify-content: end;
 }
 
 .topimage,
@@ -868,12 +920,9 @@ body {
 .top-text,
 .middle-text,
 .bottom-text {
-    width:40%;
-    text-align: left;
-    height:677px;
-    margin-left:50px;
-    margin-right:50px;
-    margin-top:30px;
+    margin: 0 3rem 0;
+
+
 }
 
 .top-text p,
